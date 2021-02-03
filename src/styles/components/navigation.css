@@ -1,0 +1,84 @@
+/*--- NAVIGATION STYLE ---*/
+
+.navBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: .5rem 0;
+    transition: var(--trans-3);
+    z-index: 100;
+    background-color: var(--born);
+
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "navbar network"
+    ;
+}
+
+.navList {
+    grid-area: navbar;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLink {
+    position: relative;
+    padding: .25em 1rem;
+    font-family: var(--hachi-naru);
+    font-size: .9em;
+    color: var(--color);
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.navLink::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 0;
+    transform-origin: left;
+    transform: translateY(-50%);
+    background-color: transparent;
+    transition: var(--trans-5);
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.navLink:hover::before, .navLink:focus::before, .navLink:active::before, .navLink:active, .activeLink::before {
+    background-color: var(--dark);
+    width: calc(100% - 20%);
+    height: 3px;
+}
+
+.navItem:last-child {
+    margin-left: 2rem;
+}
+
+.navItem:last-child .navLink {
+    border-radius: var(--bradius-3);
+    background-color: var(--dark);
+    color: var(--born);
+}
+
+.network {
+    grid-area: network;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network > a {
+    margin-left: .5em;
+    line-height: 1;
+}
+

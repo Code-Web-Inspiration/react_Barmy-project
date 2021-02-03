@@ -1,0 +1,105 @@
+/* --- GLOBAL STYLE --- */
+
+:root {
+
+    /* -- container --*/
+    --container-padding: 1rem;
+
+    /* -- police --- */
+    --potta-one: 'Potta One', cursive;
+    --hachi-naru: 'Hachi Maru Pop', cursive; 
+
+    /* -- color --- */
+    --color: rgba(255, 255, 255, .67);
+    --dark: #111;
+    --born: rgba(165, 42, 42, .8);
+    --white: rgba(255, 255, 255, 1);
+
+    /* -- size -- */
+    --baseline-size: 2.5em;
+    --parag: .7em;
+
+    --border: 2.5em;
+    --parag: .6em;
+    --bradius-3: 3px;
+    --gap: 1rem;
+    --lheight: 1.6;
+
+
+    /* -- transition -- */
+    --trans-3: .3s ease;
+    --trans-5: .5s ease;
+    --trans-1: 1s ease;
+
+
+    /* -- box and text shadow -- */
+    
+    
+   /* -- letter spacing -- */
+    --lspacing: 2px;
+    --lspacing-hover: 3;
+}
+
+*, *::before, *::after, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: var(--dark);
+    letter-spacing: var(--lspacing);
+    line-height: var(--lheight);
+    text-rendering: optimizeLegibility;
+}
+
+header, section, footer {
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    z-index: 0;
+}
+
+ul, li {
+    position: relative;
+    list-style: none;
+}
+
+a, a:link, a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-content, 
+.img-content::after,
+.img-content::before {
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-family: var(--hachi-naru);
+    font-size: var(--parag);
+    text-align: left;
+    color: var(--color);
+    line-height: 2.5;
+    letter-spacing: var(--lspacing);
+}
+
+.btn {
+    border: 1px solid var(--born);
+    border-radius: var(--bradius-3);
+    padding: .4em .8em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.b {
+    border: 1px solid #111;
+}

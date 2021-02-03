@@ -1,0 +1,15 @@
+/* --- STYLE POUR LA DISPOSITION DES ELEMENTS DE GRID --- */
+
+.container {
+    max-width: calc(100vw - var(--container-padding));
+    width: 100%;
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+
+.wrap,
+.grid {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}

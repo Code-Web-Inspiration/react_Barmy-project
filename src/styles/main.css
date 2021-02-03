@@ -1,0 +1,13 @@
+/*--- Main Style ---*/
+
+/* --- GOOGLE FONT --- */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Potta+One&display=swap');
+
+/*--- GLOBAL STYLE ---*/
+@import './_global.css';
+
+/* --- COMPONENTS --- */
+@import './components/_layout.css';
+@import './components/navigation.css';
+@import './components/header.css';
+@import './components/about.css';
