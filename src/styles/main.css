@@ -7,7 +7,12 @@
 @import './_global.css';
 
 /* --- COMPONENTS --- */
-@import './components/_layout.css';
 @import './components/navigation.css';
+@import './components/_layout.css';
 @import './components/header.css';
-@import './components/about.css';
+@import './components/footer.css';
+
+
+/*--- PAGES ---*/
+@import './pages/home/home.css';
+

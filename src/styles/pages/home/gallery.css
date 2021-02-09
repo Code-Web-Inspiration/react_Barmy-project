@@ -1,0 +1,57 @@
+.gallery {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), 
+                url('../../../media/gallery-bg.jpg') center top / cover no-repeat;
+}
+
+.gallery .container {
+    height: 100%;
+}
+
+.gallery .grid {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-baseline {
+    font-family: var(--potta-one);
+    font-size: 5em;
+    color: var(--white);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery-desc {
+    padding: .25rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.gallery-desc > p {
+    text-align: center;
+    transition: var(--trans-5);
+}
+
+.gallery-desc > p:hover {
+    color: var(--born);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .gallery-baseline {
+        font-family: var(--potta-one);
+        font-size: 4em;
+        color: var(--white);
+        margin-bottom: 30px;
+    }
+
+    .gallery-desc {
+        padding: .25rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -20,8 +20,7 @@ const About = () => {
 const AboutContent = ({ left, right }) => {
     return (<>
         <div className="grid">
-            <>{left}</>
-            <>{right}</>
+            <>{left}</><>{right}</>
         </div>
     </>)
 }

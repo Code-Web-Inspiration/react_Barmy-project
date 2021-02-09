@@ -1,0 +1,82 @@
+.footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .67), rgba(0, 0, 0, .9)),
+                url('../../media/footer-bg.jpg') left top / cover no-repeat fixed;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer .grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 250px;
+    padding: 0 var(--container-padding);
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer .img-content {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    z-index: 100;
+    margin: var(--gap)
+}
+
+.footer .img-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    transform-origin: left;
+    transition: var(--trans-3);
+}
+
+.footer .img-content:hover > img,
+.footer .img-content.is-active > img {
+    transform: scale(1.2);
+    transition: var(--trans-5);
+}
+
+.footer .wrap {
+    margin-top: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--color);
+}
+
+.footer-baseline {
+    font-family: var(--potta-one);
+    margin-bottom: 30px;
+    color: var(--born);
+}
+
+.footer-more {
+    color: var(--born);
+    font-weight: 700;
+    transition: var(--trans-3);
+}
+
+.footer-more:hover,
+.footer-more.is-active {
+    color: var(--born);
+    letter-spacing: var(--lspacing-hover);
+}
+
+.copy {
+    margin-top: 100px;
+    text-align: center;
+}
