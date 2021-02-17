@@ -34,7 +34,7 @@ const Gallery = () => {
         const datas = PostData
         if (datas) {
             const limit = datas.length > MAX_ITEM ? parseInt((MAX_ITEM * 2), 10) : datas.length
-            setPosts(d => datas.slice(-limit))
+            setPosts(datas.slice(-limit))
         } else {
             return new Error(datas)
         }
